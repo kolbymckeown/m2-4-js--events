@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="currentTime">
+        <p>Here's the current local time!</p>
+        <span id="time"></span>
+    </div>
+        <div class="stopwatch">
+        <p id="timer1">Use this stopwatch to see how much time you're wasting!</p>
+        <span id="stopwatch">0</span>
+        <button class="btn btn-1" onclick="start();" id="start">Start</button>
+        <button class="btn btn-2" onclick="stop();" id="stop">Stop</button>
+        <button class="btn btn-3" onclick="reset();" id="reset">Reset</button>
+
+    </div>
+    <div class="timer">
+        <p>Set a custom time to countdown and hear a special sound!</p>
+        <input type="number" max="60" min="1" placeholder="Enter amount of seconds" class="input" id="input" />
+        <button id="timerStart" onclick="startCountdown();">Start</button>
+        <span id="timeArea" class="timeArea">0</span>
+        <audio id="audio" src="./glass_ping.mp3.mp3" preload="auto"></audio>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -77,6 +77,12 @@ All DOM nodes have methods we can use to _notify_ us of an event.
 
 ```js
 // Example
+<buttton class="main-button">Click Here</button>
+//JavaScript
+let elem = document.querySelector('.main-button');
+elem.addEventListener('click', function () {
+  console.log('link was clicked!');
+});
 ```
 
 ---
@@ -86,7 +92,7 @@ All DOM nodes have methods we can use to _notify_ us of an event.
 Event handler functions are passed an argument, when events are triggered.
 
 ```js
-window.addEventListener(function (event) {
+window.addEventListener('resize', function (event) {
   console.log(event);
 });
 ```

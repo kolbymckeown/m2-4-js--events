@@ -5,7 +5,19 @@
 
 // Hints:
 // - Target the <body>
+// - By default, the <body> will be 0px tall. You can add a style in the
+//   `<style>` tags to fill the viewport height.
 
 // OPTIONAL
 // Feel free to add some CSS to this once you're done
 // --------------------------------------------------
+
+const body = document.querySelector('body');
+
+body.addEventListener('click', function() {
+    let main = document.querySelector('.main');
+    let para = document.createElement('p');
+    para.innerText = 'This is some plain text :D';
+    main.appendChild(para);
+});
+

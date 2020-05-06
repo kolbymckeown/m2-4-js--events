@@ -1,0 +1,12 @@
+button {
+    background-color: crimson;
+    width: 75px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: black;
+    position: absolute;
+}
+
+.green {
+    background-color: chartreuse;
+}

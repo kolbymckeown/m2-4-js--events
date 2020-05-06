@@ -21,3 +21,44 @@
 // Stretch goal
 // Make the countdown live (show a countdown that updates several times a
 // second)
+
+
+const body = document.querySelector('body');
+const result = document.querySelector('.result');
+
+
+let response = false;
+
+body.addEventListener('click', clickEvent);
+
+function clickEvent() {
+    response = true;
+    result.innerText = 'Win!';
+
+    body.removeEventListener('click', clickEvent);
+}
+
+
+// Math.floor(Math.random() * (5 - 3 + 1) + 3) * 1000)
+
+
+
+// make the time random between 3 and 5
+let totalTime = document.getElementById('time');
+totalTime.innerText = `${randomNumber() / 1000} ` 
+
+
+//  ************ How to make sure my randomNumber is the same
+//  displaying as it is for the setTimeout function *****
+
+function randomNumber() {
+    let x = (Math.floor(Math.random() * (5 - 3 + 1) + 3) * 1000);
+    console.log(x);
+    setTimeout(function() {
+        if (!response) {
+            result.innerText = 'Lose!';
+            body.removeEventListener('click', clickEvent);
+        }
+    }, x)
+    return x;
+}

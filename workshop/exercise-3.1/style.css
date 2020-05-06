@@ -1,0 +1,13 @@
+button {
+    color: red;
+    background-color: red;
+    height: 25px;
+    width: 70px;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.green {
+    background-color: chartreuse;
+}

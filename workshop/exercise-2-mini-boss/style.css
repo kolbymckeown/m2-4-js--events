@@ -1,0 +1,30 @@
+html {
+background: linear-gradient(to right, #4A569D, #DC2424); 
+}
+
+.container {
+    padding-left: 150px;
+    padding-top: 100px;
+    color: goldenrod;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    color: goldenrod;
+    font-size: 25px;
+    background-color: black;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 25px;
+}
+
+.input {
+    width: 20%;
+    text-align: center;
+}
+
+.timeArea {
+display: flex; 
+margin-top: 10px;   
+}
